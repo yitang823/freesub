@@ -17,14 +17,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: vpn-in-001.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 03 - xiaohe
   server: 152.67.8.205
   port: 80
   udp: true
@@ -35,6 +27,14 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇮🇳 印度 (India) 03 - xiaohe
+  server: vpn-in-001.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: whatsapp.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
