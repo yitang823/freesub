@@ -6,19 +6,12 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
   server: 195.238.126.20
-  port: 9012
+  port: 9001
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
+  password: UkXRsXvR6buDMG2Y
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
-  server: 195.238.126.20
-  port: 9002
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
   server: 88.119.176.24
   port: 443
   udp: true
@@ -30,6 +23,18 @@ proxies:
     public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
     short-id: ff776ff77be48b88
   servername: lit9.helper-internet.com
+  client-fingerprint: firefox
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
+  server: lith.2clash.ru
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 66DIn_CbsE4-fWeWpy3vrRLP-XN8D-axun3jbZzuPmk
+  servername: lith.2clash.ru
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES

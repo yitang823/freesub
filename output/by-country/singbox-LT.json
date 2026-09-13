@@ -7,21 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9001,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
-      "server": "195.238.126.20",
-      "server_port": 9002,
-      "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
+      "password": "UkXRsXvR6buDMG2Y"
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
       "server": "88.119.176.24",
       "server_port": 443,
       "uuid": "ae8e0f7d-b661-41ca-b55d-d8c383adb2f8",
@@ -37,6 +29,27 @@
           "enabled": true,
           "public_key": "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE",
           "short_id": "ff776ff77be48b88"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe",
+      "server": "lith.2clash.ru",
+      "server_port": 443,
+      "uuid": "3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lith.2clash.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "66DIn_CbsE4-fWeWpy3vrRLP-XN8D-axun3jbZzuPmk",
+          "short_id": ""
         }
       }
     },
