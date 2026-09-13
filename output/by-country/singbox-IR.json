@@ -4,15 +4,18 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇰🇬 KG 01 - xiaohe",
-      "server": "172.67.67.178",
+      "type": "trojan",
+      "tag": "🇮🇷 IR 01 - xiaohe",
+      "server": "199.232.78.101",
       "server_port": 443,
-      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "password": "MiTiVPN",
       "tls": {
         "enabled": true,
-        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
+        "server_name": "ssl.fastly.com",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -21,7 +24,7 @@
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "rAyAn-007.nAsTaRaN.DpDnS.OrG"
+          "Host": "mitivpn---ss--s---mitivpn-11.global.ssl.fastly.net"
         }
       }
     },
@@ -30,14 +33,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇬 KG 01 - xiaohe"
+        "🇮🇷 IR 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇬 KG 01 - xiaohe"
+        "🇮🇷 IR 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
