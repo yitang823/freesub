@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - xiaohe
-  server: 172.66.44.124
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: 104.25.30.10
   port: 443
   udp: true
   type: vless
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  uuid: 807cd1e0-f4ce-4785-b7a3-cde0c1614b8d
   tls: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  servername: de14.69lover.my
   skip-cert-verify: false
-  client-fingerprint: randomized
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /pRXE5ot0RZaQSr7B
+    path: /api/v2/6c316c769ad6853c/stream
     headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+      Host: de14.69lover.my
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 rules:
 - MATCH,PROXIES
