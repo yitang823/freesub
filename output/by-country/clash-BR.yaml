@@ -4,33 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.57.84
-  port: 8443
+- name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  server: 104.64.59.22
+  port: 443
   udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
   tls: true
-  servername: v2ray1.dozapp.xyz
+  servername: kkkk-8oc.pages.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /?ed=2048
     headers:
-      Host: v2ray1.dozapp.xyz
+      Host: kkkk-8oc.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 01 - xiaohe
 rules:
 - MATCH,PROXIES
