@@ -4,22 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-      "server": "ir-new.failspace.top",
+      "type": "trojan",
+      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
+      "server": "104.21.76.194",
       "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
+      "password": "Telegram_healer_config",
       "tls": {
         "enabled": true,
-        "server_name": "ir-new.failspace.top",
+        "server_name": "X8xus4X7UTZMDozv2.bZuH25LZINNeTwTOcXYIcx.WORkERs.deV",
         "insecure": false,
         "alpn": [
-          "h2"
+          "http/1.1"
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr/nDuppKYyUqsEcG0rcQEg5sghG0?ed",
+        "headers": {
+          "Host": "x8xus4x7utzmdozv2.bzuh25lzinnetwtocxyicx.workers.dev"
         }
       }
     },
@@ -28,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

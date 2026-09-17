@@ -18,24 +18,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-      "server": "140.245.38.33",
-      "server_port": 2096,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true
-      },
+      "server": "118.193.57.167",
+      "server_port": 49667,
+      "uuid": "d46bf492-45f4-4c33-82d1-ea2a1cb54eb6",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/class/season",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        "path": "/d46bf492"
       }
     },
     {

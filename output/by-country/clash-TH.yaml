@@ -16,19 +16,16 @@ proxies:
     headers:
       Host: aIs.SpEeDtEsT.nEt
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  server: 140.245.38.33
-  port: 2096
+  server: 118.193.57.167
+  port: 49667
   udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
+  type: vmess
+  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /class/season
-    headers:
-      Host: cdn8848.776676.xyz
+    path: /d46bf492
 proxy-groups:
 - name: PROXIES
   type: select
