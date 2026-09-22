@@ -4,31 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - xiaohe
-  server: 185.255.179.11
-  port: 9443
+- name: 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
+  server: 188.42.145.180
+  port: 443
   udp: true
-  type: vless
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  tls: true
-  servername: hub-de-03.hanvpn.cc
+  type: trojan
+  password: humanity
+  sni: www.volumeroot.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /de03-ws-8e47a
-    headers:
-      Host: hub-de-03.hanvpn.cc
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
 rules:
 - MATCH,PROXIES
