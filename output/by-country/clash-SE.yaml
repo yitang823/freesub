@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 13.62.228.76
+  server: 51.20.96.231
   port: 443
   udp: true
   type: ss
@@ -27,25 +27,31 @@ proxies:
   grpc-opts:
     grpc-service-name: grpce5bb9e71
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: secas.astrafic.ru
+  server: 89.125.37.143
   port: 443
   udp: true
   type: vless
-  uuid: 3d9daa27-6283-406d-a2d4-c6f22c635a14
+  uuid: d39a375e-2f51-4d26-8cf4-5b437bbb3c99
+  flow: xtls-rprx-vision
   tls: true
-  servername: secas.astrafic.ru
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless-grpc
+  reality-opts:
+    public-key: nF_kEdHan2dgl2tlQ_dtNaKZ4oORhuiFrXHbtEDcT2Q
+    short-id: 2d6d073dc88f22a8
+  servername: nordic.global-cdn.org
+  client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: 51.20.86.152
+  server: 193.163.203.170
   port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  type: vless
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  servername: yandex.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
