@@ -16,8 +16,19 @@ proxies:
     public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
     short-id: 5efa80b939612291
   servername: d3-se1.cloud-cdn.xyz
-  client-fingerprint: qq
+  client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  server: psf-2.weedly.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: 33016f3d-8509-493c-bd8b-d26447d48135
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: stigmata.ir
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -32,17 +43,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: psf-2.weedly.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: 33016f3d-8509-493c-bd8b-d26447d48135
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stigmata.ir
 proxy-groups:
 - name: PROXIES
   type: select
