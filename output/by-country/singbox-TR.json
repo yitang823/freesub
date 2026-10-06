@@ -4,38 +4,49 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "206.1.103.221",
-      "server_port": 17390,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "4zo9pQzwxsh1bMeReRoD/Ma2N3ZKvTJ6gZRhRcOGtzU=:5bsD1WmoheBbkMn4uYAa3A3ERVpjp3CRyYylrTg4sg8="
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 R50 - xiaohe",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
-      "type": "vmess",
+      "type": "trojan",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "netork.povrak.ir",
-      "server_port": 37523,
-      "uuid": "ce0bcb75-baa7-41a7-833e-eb54a8f6a08e",
-      "security": "auto"
+      "server": "104.21.48.18",
+      "server_port": 2053,
+      "password": "e309e031-991e-4656-9934-44d10deb8fd8",
+      "tls": {
+        "enabled": true,
+        "server_name": "nimm.mpd.cc.cd",
+        "insecure": false,
+        "alpn": [
+          "h3h2http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/0962",
+        "headers": {
+          "Host": "nimm.mpd.cc.cd"
+        }
+      }
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
-      "server": "151.241.226.201",
-      "server_port": 2053,
-      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
-          "short_id": "9e419c0759b54d6f"
+      "server": "cookie.wookshop.ir",
+      "server_port": 43233,
+      "uuid": "568bcbbc-7a90-4164-8b5d-1c0bbeccfa38",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "cookie.wookshop.ir"
         }
       }
     },
@@ -44,7 +55,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 01 R50 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 03 - xiaohe"
       ]
@@ -53,7 +64,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 01 R50 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 03 - xiaohe"
       ],
