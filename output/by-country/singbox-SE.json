@@ -5,28 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "188.114.98.134",
-      "server_port": 443,
-      "uuid": "ba49d874-fe02-465d-82d3-ed981dc7694f",
+      "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
+      "server": "62.60.159.81",
+      "server_port": 2053,
+      "uuid": "fc00adfb-232a-46ce-8b93-0c70e516aa8a",
       "tls": {
         "enabled": true,
-        "server_name": "o94yv7LiF0-AnxIsd9EFehVvs7mXn6bh.z-UlE-ikA-d-e-nE-k-E.WorkeRs.dEv",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw",
+          "short_id": "d0ea1847066af5a6"
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev"
-        }
+        "type": "grpc",
+        "service_name": "grpce5bb9e71"
       }
     },
     {
@@ -34,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
