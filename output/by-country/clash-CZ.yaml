@@ -5,33 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 104.18.34.21
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
-  tls: true
-  servername: socks5.revil-time3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /socks5://128.140.46.169:13482
-    headers:
-      Host: socks5.revil-time3.workers.dev
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 188.114.97.3
-  port: 443
-  udp: true
-  type: trojan
-  password: pjg&JybcgFsca,+gQMa
-  sni: 022XW1dmCZG0c6165pcLA6.tOMborn69.WoRKErs.Dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/4SzHKYN7XBvR1ddoFe2atydxL69?ed=2560
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: cz.h2.cleanersaz.help
+  server: 95.85.238.173
   port: 443
   udp: true
   type: hysteria2
@@ -44,15 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 rules:
 - MATCH,PROXIES
